@@ -1,15 +1,6 @@
 var express = require('express')
 var bodyparser = require('body-parser')
 
-var mysql = require('mysql');
-var config = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : 'root',
-    database : 'burgers_db',
-    port     : 8889
-});
-
 var app = express()
 
 config.connect();
